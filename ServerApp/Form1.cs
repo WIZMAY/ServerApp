@@ -58,12 +58,5 @@ namespace ServerApp
             Monitoring_richTextBox.Invoke((MethodInvoker)delegate { Monitoring_richTextBox.AppendText(str + "\r\n"); }); // 데이타를 수신창에 표시, 반드시 invoke 사용. 충돌피함.
             Monitoring_richTextBox.Invoke((MethodInvoker)delegate { Monitoring_richTextBox.ScrollToCaret(); });  // 스크롤을 젤 밑으로.
         }
-
-        private void Submit_Btn_Click(object sender, EventArgs e)  // '보내기' 버튼이 클릭되면
-        {
-            string sendData1 = Submit_textBox.Text;  // testBox3 의 내용을 sendData1 변수에 저장
-            Submit_textBox.Text = "";
-            streamWriter1.WriteLine(sendData1);  // 스트림라이터를 통해 데이타를 전송
-        }
     }
 }
