@@ -38,27 +38,28 @@
             // 
             // Monitoring_richTextBox
             // 
-            this.Monitoring_richTextBox.Location = new System.Drawing.Point(27, 77);
+            this.Monitoring_richTextBox.Location = new System.Drawing.Point(31, 96);
             this.Monitoring_richTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Monitoring_richTextBox.Name = "Monitoring_richTextBox";
-            this.Monitoring_richTextBox.Size = new System.Drawing.Size(847, 390);
+            this.Monitoring_richTextBox.Size = new System.Drawing.Size(967, 486);
             this.Monitoring_richTextBox.TabIndex = 0;
             this.Monitoring_richTextBox.Text = "";
             // 
             // IP_textBox
             // 
-            this.IP_textBox.Location = new System.Drawing.Point(172, 37);
+            this.IP_textBox.Location = new System.Drawing.Point(197, 46);
             this.IP_textBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.IP_textBox.Name = "IP_textBox";
-            this.IP_textBox.Size = new System.Drawing.Size(259, 21);
+            this.IP_textBox.Size = new System.Drawing.Size(295, 25);
             this.IP_textBox.TabIndex = 1;
+            this.IP_textBox.Text = "localhost";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(636, 38);
+            this.button1.Location = new System.Drawing.Point(727, 48);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(66, 18);
+            this.button1.Size = new System.Drawing.Size(75, 22);
             this.button1.TabIndex = 2;
             this.button1.Text = "Connect";
             this.button1.UseVisualStyleBackColor = true;
@@ -66,35 +67,36 @@
             // 
             // Port_textBox
             // 
-            this.Port_textBox.Location = new System.Drawing.Point(491, 37);
+            this.Port_textBox.Location = new System.Drawing.Point(561, 46);
             this.Port_textBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Port_textBox.Name = "Port_textBox";
-            this.Port_textBox.Size = new System.Drawing.Size(105, 21);
+            this.Port_textBox.Size = new System.Drawing.Size(119, 25);
             this.Port_textBox.TabIndex = 4;
+            this.Port_textBox.Text = "5000";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(147, 42);
+            this.label1.Location = new System.Drawing.Point(168, 52);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(16, 12);
+            this.label1.Size = new System.Drawing.Size(20, 15);
             this.label1.TabIndex = 6;
             this.label1.Text = "IP";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(456, 42);
+            this.label2.Location = new System.Drawing.Point(521, 52);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(27, 12);
+            this.label2.Size = new System.Drawing.Size(34, 15);
             this.label2.TabIndex = 7;
             this.label2.Text = "Port";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(901, 489);
+            this.ClientSize = new System.Drawing.Size(1030, 611);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Port_textBox);
@@ -103,7 +105,7 @@
             this.Controls.Add(this.Monitoring_richTextBox);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Level2 Server";
             this.ResumeLayout(false);
             this.PerformLayout();
 

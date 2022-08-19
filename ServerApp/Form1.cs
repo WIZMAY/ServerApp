@@ -20,8 +20,8 @@ namespace ServerApp
         {
             InitializeComponent();
         }
-        StreamReader streamReader1;  // 데이타 읽기 위한 스트림리더
-        StreamWriter streamWriter1;  // 데이타 쓰기 위한 스트림라이터    
+        StreamReader streamReader1;  // 데이터 읽기 위한 스트림리더
+        StreamWriter streamWriter1;  // 데이터 쓰기 위한 스트림라이터    
 
         private void Connect_Btn_Click(object sender, EventArgs e)  // '연결하기' 버튼이 클릭되면
         {
@@ -46,11 +46,8 @@ namespace ServerApp
             while (tcpClient1.Connected)  // 클라이언트가 연결되어 있는 동안
             {
                 string receiveData1 = streamReader1.ReadLine();  // 수신 데이타를 읽어서 receiveData1 변수에 저장
-                /*string tc_code = receiveData1.Substring(0, 8);
-                string sort = receiveData1.Substring(8, 1);*/
                 writeRichTextbox(receiveData1); // 데이타를 수신창에 쓰기                  
-            }/*
-            string send_data_header = tc_c+*/
+            }
         }
 
         private void writeRichTextbox(string str)  // monitoring richbox 에 쓰기 함수
