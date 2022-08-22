@@ -32,7 +32,7 @@ namespace ServerApp
 
         private void connect()  // thread1에 연결된 함수. 메인폼과는 별도로 동작한다.
         {
-            TcpListener tcpListener1 = new TcpListener(IPAddress.Parse(IP_textBox.Text), int.Parse(Port_textBox.Text)); // 서버 객체 생성 및 IP주소와 Port번호를 할당
+            TcpListener tcpListener1 = new TcpListener(IPAddress.Parse("127.0.0.1"), 5000); // 서버 객체 생성 및 IP주소와 Port번호를 할당
             tcpListener1.Start();  // 서버 시작
             writeRichTextbox("서버 준비...클라이언트 기다리는 중...");
 
